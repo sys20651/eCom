@@ -310,6 +310,7 @@ td:hover {
 	padding: 0 15px;
 	outline: 1px solid red;
 }
+
 .card {
 	float: left;
 }
@@ -740,9 +741,8 @@ textarea:hover {
 }
 /* feature-products */
 .feature-product-heading {
-	width: 371px;
+	width: 400px;
 	height: 53px;
-
 	margin-top: 150px;
 	text-align: center;
 	margin: 0 auto;
@@ -752,12 +752,30 @@ textarea:hover {
 .imageContainer {
 	border-radius: 5px;
 	padding-top: -50px;
-	display: inline-block;
+	display: block;
+	width: 420px;
+	height: 155px;
+	float: left;
 }
-
+.imageContainer2 {
+	border-radius: 5px;
+	padding-top: -50px;
+	float: left;
+	width: 420px;
+	height: 155px;
+	display: block;
+}
+.imageContainer3 {
+	border-radius: 5px;
+	padding-top: -50px;
+	float: left;
+	width: 420px;
+	height: 155px;
+	display: block;
+}
 .prod2 {
-	margin-right: 950px;
-	margin-top: 15px;
+	margin-top: 10px;
+	margin-right: 140px;
 }
 .checked {
 	color: orange;
@@ -773,10 +791,13 @@ textarea:hover {
 	margin-left: 180px;
 	margin-top: -160px;
 	margin-bottom: 160px;
+	width: 180px;
+	height: 54px;
 }
 .checkedStarss {
 	margin-left: 180px;
 	margin-top: -140px;
+	position: relative;
 }
 .vectorImgText4 {
 	font-family: Poppins;
