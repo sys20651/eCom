@@ -28,6 +28,9 @@ Colors:
 	--blueFocus: #00aaff;
 	--skyBlue: #bcddfe;
 	--gray: #999999;
+	--grayHover: #bbbbbb;
+	--grayFocus: #777777;
+	--green: #36bc74;
 	--lightGray: #eeeeee;
 	--darkBlue: #223263;
 	--yellow: #ffc600;
@@ -95,7 +98,7 @@ select {
 }
 
 .container {
-	max-width: 1275px;
+	max-width: 1265px;
 	margin: 0 auto;
 	padding: 0 15px;
 	outline: 1px solid red;
@@ -116,6 +119,14 @@ select {
 
 .text-muted {
 	color: var(--gray) !important;
+}
+
+.checked {
+	color: var(--yellow);
+}
+
+.unchecked {
+	color: var(--gray);
 }
 
 .btn {
@@ -364,20 +375,52 @@ header .min-header {
 
 /* Subcategory */
 
-.dropdown {
+.nav .nav-item .dropdown {
 	background-color: var(--white);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	color: var(--dark);
-	display: none;
 	left: -50px;
 	position: absolute;
 	top: 35px;
 	z-index: 10;
+	display: none;
+}
+
+.filters .dropdown {
+	background-color: var(--white);
+	color: var(--dark);
+	display: inline-block;
+	position: relative;
+	margin: 20px 0;
+}
+
+.dropbtn {
+	background-color: var(--white);
+	border: none;
+	color: var(--grayFocus);
+	cursor: pointer;
+	position: relative;
+	font-size: 14px;
+	padding: 9px 16px;
+	text-align: left;
+	width: 100%;
+}
+
+.filters .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
 }
 
 .dropdown-content a {
 	text-decoration: none;
 	display: block;
+	text-align: center;
+	color: var(--dark);
 }
 
 /* .dropdown:hover .dropdown-content {
@@ -388,9 +431,13 @@ header .min-header {
 	background-color: var(--white);
 }
 
-.nav-link:hover + .dropdown {
+.dropdown:hover .dropdown-content {
 	display: block;
 }
+
+/* .nav-link:hover + .nav .nav-item .dropdown {
+	display: block;
+} */
 
 .dropdown table,
 .dropdown tr,
@@ -434,27 +481,12 @@ header .min-header {
 	letter-spacing: 0.5px;
 	top: 200px;
 }
-
-.title2 {
-	color: var(--darkBlue);
-	position: absolute;
-	font-weight: 700;
-	font-size: var(--fontSizeMd);
-	line-height: 150%;
+.card-title.title2 {
 	left: 575px;
-	letter-spacing: 0.5px;
-	top: 200px;
 }
 
-.title3 {
-	color: var(--darkBlue);
-	position: absolute;
-	font-weight: 700;
-	font-size: var(--fontSizeMd);
-	line-height: 150%;
+.card-title.title3 {
 	left: 1025px;
-	letter-spacing: 0.5px;
-	top: 200px;
 }
 
 .card .card-image {
@@ -619,29 +651,79 @@ a + p {
 }
 
 /* Featured Product */
-.featuredProduct {
+.featuredProduct,
+.latestNews,
+.whyUs,
+main.bestSeller {
 	display: block;
 	margin: 30px auto;
 }
 
-.featuredProduct .product {
-	display: inline-block;
-}
-.product img {
-	margin-right: 20px;
+.featuredProduct h2,
+.latestNews h2,
+.whyUs .whyus,
+main h2,
+main nav .m-nav {
+	text-align: center;
+	align-items: center;
 }
 
-.product .content {
+.featuredProduct .product,
+.latestNews .news,
+.bestSeller .cards {
+	display: inline-block;
+}
+
+.news img,
+.whyus img {
+	margin: 10px 65px 45px;
+	vertical-align: top;
+}
+
+.latestNews .news img {
+	margin: 20px 25px;
+}
+
+.product .content,
+.news .content,
+.whyus .content {
 	max-width: 218px;
 	display: inline-block;
 }
 
-.product span:first-child {
+main.bestSeller .cards {
+	max-width: 25%;
+}
+
+article .bestSeller .row {
+	padding: 0px 25px;
+}
+
+.whyus .content {
+	display: block;
+	text-align: center;
+}
+
+.bestSeller .cards {
+	text-align: center;
+	margin: 0;
+}
+
+.cards:first-child {
+	margin-left: 25px;
+}
+.product span:first-child,
+.news span:first-child,
+.cards .card-title {
 	display: block;
 }
 
 .product span {
 	margin: 5px 0px;
+}
+
+.whyus span {
+	display: block;
 }
 
 .product .title {
@@ -661,10 +743,298 @@ a + p {
 	letter-spacing: 0.5px;
 }
 
-.checked {
-	color: var(--yellow);
+/* Latest News */
+
+.content span + span {
+	font-weight: bold;
+	font-size: var(--fontSizeMd);
 }
 
-.unchecked {
+/* Why Us Component */
+.content span + p {
+	font-size: var(--fontSizeSm);
+}
+
+.whyus .content span {
+	font-size: var(--fontSizeLg);
+}
+
+.row .whyus {
+	display: inline-block;
+	margin: 0px 90px;
+}
+
+/* Best Seller */
+.m-nav .main-nav {
+	display: inline;
+	list-style: none;
+	padding: 20px;
+}
+
+.m-nav .main-nav a {
+	color: var(--black);
+	font-size: var(--fontSizeMd);
+	line-height: 33px;
+	text-decoration: none;
+}
+
+.m-nav .main-nav a:hover {
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+.cards .discount .price {
+	color: var(--blue);
+}
+
+.cards .card-title {
+	color: var(--darkBlue);
+	font-size: var(--fontSizeMd);
+	font-weight: bold;
+}
+
+/* Product List page */
+
+.main {
+	margin: 50px 0px;
+}
+
+.main .dealBar {
+	background-color: var(--lightGray);
+	color: var(--dark);
+	font-size: var(--fontSizeSm);
+	line-height: 22px;
+	height: 50px;
+	margin-bottom: 66px;
+	opacity: 0.7;
+	padding: 14.5px;
+	text-align: center;
+	width: 100%;
+}
+
+.main .dealBar span:hover,
+.main .dealBar span:focus {
+	color: var(--blueFocus);
+}
+
+.main aside,
+.main article {
+	float: left;
+	min-height: 500px;
+}
+
+.main aside {
+	width: 20%;
+}
+
+.main article {
+	width: 80%;
+}
+
+.main table,
+.main tr,
+.main td {
+	background-color: var(--lightGray);
+	margin: 0 auto;
+	padding: 10px;
+	text-align: right;
+	vertical-align: top;
+}
+
+.main tr {
+	margin-bottom: 15px;
+}
+
+.main table {
+	border-spacing: 6px;
+	margin: 0;
+	width: 100%;
+}
+
+.main table:not(:first-child) {
+	margin: 20px 0px;
+}
+
+.main tr:hover {
+	color: var(--blue);
+}
+
+.main tr:first-child {
+	color: var(--dark) !important;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	margin-bottom: 15px;
+}
+
+.main td:first-child {
+	text-align: left;
+}
+
+.main table .cir-color {
+	border-radius: 50%;
+	background-color: var(--blue);
+	height: 29px;
+}
+
+.main table .cir-color:hover,
+.main table .cir-color:focus {
+	border: 1px solid var(--dark);
+}
+
+.main table .cir-color.blue:hover {
+	filter: drop-shadow(0 0 2px var(--blue));
+}
+
+.main table .cir-color.red {
+	background-color: var(--red);
+}
+
+.main table .cir-color.red:hover {
+	filter: drop-shadow(0 0 2px var(--red));
+}
+
+.main table .cir-color.black:hover {
+	filter: drop-shadow(0 0 2px var(--black));
+}
+
+.main table .cir-color.black {
+	background-color: var(--dark);
+}
+.main table .cir-color.green:hover {
+	filter: drop-shadow(0 0 2px var(--green));
+}
+.main table .cir-color.green {
+	background-color: var(--green);
+}
+.main table .cir-color.pink:hover {
+	filter: drop-shadow(0 0 2px var(--pink));
+}
+
+.main table .cir-color.pink {
+	background-color: var(--pink);
+}
+.main table .cir-color.yellow:hover {
+	filter: drop-shadow(0 0 2px var(--yellow));
+}
+
+.main table .cir-color.yellow {
+	background-color: var(--yellow);
+}
+
+.main aside .more {
+	background-color: var(--lightGray);
+	border-radius: 4px;
+	color: var(--dark);
+	font-weight: 500;
+	font-size: var(--fontSize);
+	line-height: 21px;
+	padding: 10px 0px;
+	min-width: 100%;
+}
+
+.main aside .more:hover {
+	background-color: var(--grayHover);
+}
+
+.main aside .more:focus {
+	background-color: var(--gray);
+}
+
+.main table .range {
+	font-size: 14px;
+}
+
+.main table .slider-range {
+	width: 100%;
+}
+
+.main .filters {
+	margin: 0 auto;
+	background-color: var(--lightGray);
+}
+
+.main .filters span {
+	padding: 0 30px;
+}
+
+.filters .filter-icons {
+	float: right;
+	font-size: 24px;
+	padding: 24px 20px;
 	color: var(--gray);
+}
+
+/* Product List */
+
+.main article .productList {
+	display: relative;
+	padding: 15px;
+}
+
+.productList .details {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+.productList .details .card-title {
+	display: block;
+	font-weight: 500;
+	font-size: var(--fontSizeLg);
+	line-height: 36px;
+}
+
+.details .review {
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--gray);
+	padding: 0px 8px;
+}
+
+.details a {
+	font-size: 14px;
+	line-height: 17px;
+	color: var(--blue);
+}
+
+.productList .image {
+	float: left;
+	width: 30%;
+}
+
+.productList .details {
+	float: right;
+	margin-top: -275px;
+	padding-left: 10px;
+	width: 70%;
+}
+
+.productList .addToCart {
+	background-color: var(--skyBlue);
+	color: var(--blueFocus);
+	min-width: 150px !important;
+}
+
+.productList .heart {
+	margin-left: 14px;
+	min-width: 46px !important;
+}
+
+.details .discount .price {
+	color: var(--blue);
+	display: inline;
+}
+
+article .container .row {
+	margin-bottom: 20px;
+}
+
+article .dealBar span {
+	opacity: 0.8;
+	padding: 15px 30px;
+}
+
+article .dealBar span:hover {
+	background-color: var(--grayHover);
 }
