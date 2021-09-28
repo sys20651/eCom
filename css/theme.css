@@ -90,10 +90,17 @@ select {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1265px;
 	margin: 0 auto;
 	padding: 0 15px;
 	outline: 1px solid red;
+}
+.container-card {
+	max-width: 1265px;
+	margin: 0 auto;
+	padding: 0 15px;
+	outline: 1px solid red;
+	height: 100px;
 }
 
 .row {
@@ -303,13 +310,6 @@ td:hover {
 }
 /* Card CSS */
 /* CARD1 */
-.card-container {
-	max-width: 1265px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	padding: 0 15px;
-	outline: 1px solid red;
-}
 
 .card {
 	float: left;
@@ -743,7 +743,7 @@ textarea:hover {
 .feature-product-heading {
 	width: 400px;
 	height: 53px;
-	margin-top: 150px;
+	margin-top: 300px;
 	text-align: center;
 	margin: 0 auto;
 	font-weight: 600px;
@@ -827,4 +827,209 @@ textarea:hover {
 	flex-grow: 0;
 	margin: 0px 8px;
 	float: right;
+}
+/* footer muted */
+.footer-mutedtext {
+	color: var(--gray);
+	font-weight: 400;
+	font-size: 14px;
+	height: 17px;
+	line-height: 17.05px;
+	margin-top: 10px;
+	margin-left: 150px;
+	width: 311px;
+}
+/* LATEST PRODUCTS */
+.containerBlock {
+	width: 420px;
+}
+.containerBlock2 {
+	width: 420px;
+	float: left;
+}
+.containerBlock3 {
+	width: 420px;
+	float: left;
+}
+
+.containerBlock div {
+	float: left;
+}
+.containerBlock2 div {
+	float: left;
+}
+.containerBlock3 div {
+	float: left;
+}
+.containerBlock .containeraside {
+	width: 180px;
+}
+.containerBlock3 .containeraside {
+	width: 180px;
+}
+.containerBlock2 .containeraside {
+	width: 180px;
+}
+
+.containerBlock .containerContent {
+	width: 240px;
+}
+.containerBlock2 .containerContent {
+	width: 240px;
+}
+.containerBlock3 .containerContent {
+	width: 240px;
+}
+.date {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	color: #c1c8ce;
+}
+
+.containerBlock div::after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+.iconShipping2 {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 20px;
+	color: var(--black);
+}
+.iconPara {
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	height: 64px;
+	width: 193px;
+	color: var(--black);
+	margin-bottom: 20px;
+}
+.nike {
+	padding-top: 60px;
+	padding-left: 10px;
+}
+/* icon */
+.truck {
+	color: var(--red);
+	width: 100px;
+	height: 65px;
+	font-size: 100px;
+	margin-left: 80px;
+	padding-top: 10px;
+}
+.refund {
+	color: var(--red);
+	width: 100px;
+	height: 65px;
+	font-size: 100px;
+	margin-left: 80px;
+	padding-top: 10px;
+}
+.support {
+	color: var(--red);
+	width: 100px;
+	height: 65px;
+	font-size: 100px;
+	margin-left: 80px;
+	padding-top: 10px;
+}
+.iconShipping {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 40px;
+	margin-left: 50px;
+
+	color: var(--black);
+}
+.iconPara2 {
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	margin-left: 50px;
+
+	color: var(--black);
+}
+.alignTruck,
+.alignRefund,
+.alignSupport {
+	margin-right: 180px;
+	float: right;
+}
+
+/* running bar */
+.containerBar {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 600px;
+	background-color: var(--blue);
+}
+.captionDiv {
+	width: 571px;
+	height: 166px;
+	padding-top: 160px;
+	padding-left: 80px;
+}
+.caption {
+	font-weight: 500;
+	font-family: "Poppins";
+	color: var(--white);
+	font-size: 55px;
+	margin: 0 auto;
+	line-height: 73px;
+}
+.contentDiv {
+	width: 592px;
+	height: 36px;
+	padding-top: 160px;
+	padding-left: 80px;
+}
+.contentCaption {
+	font-weight: 400;
+	font-family: "Poppins";
+	color: var(--white);
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 36px;
+}
+.contentBold {
+	font-weight: 600;
+	font-family: "Poppins";
+	color: var(--white);
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 36px;
+}
+.shoeeImg {
+	margin-left: 700px;
+	margin-top: -400px;
+}
+.barRunning {
+	height: 3px;
+	width: 75px;
+	background-color: var(--white);
+}
+/* best seller */
+.prod {
+	margin-right: 910px;
+	margin-top: 15px;
+}
+.checked {
+	color: orange;
+}
+.checkedStars {
+	margin-left: 120px;
+	margin-top: 10px;
 }
