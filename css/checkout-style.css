@@ -696,7 +696,7 @@ option {
 	margin-bottom: 10px;
 	outline: none;
 	padding: 10px 25px;
-	width: 510px;
+	width: 300px;
 }
 
 .textarea {
@@ -733,25 +733,26 @@ textarea:hover {
 	filter: drop-shadow(0 0 2px var(--blue));
 }
 .search-btn {
-	border-radius: 0px;
+	border-radius: 2px;
 	height: 62px;
 	line-height: 20px;
-	min-width: 130px;
+	min-width: 100px;
 	margin-top: 0;
-	margin-left: 505px;
+	margin-left: 300px;
 	padding: 22px 10px;
 	position: relative;
 }
 
 .search {
 	border-color: var(--blue);
-	border-radius: 4px;
+	border-radius: 1px;
 	height: 62px;
-	min-width: 635px;
+	min-width: 400px;
 	padding-top: 16px;
 	padding-right: 0;
 	position: absolute;
 	text-align: left;
+	outline: solid 2px var(--blue);
 }
 .search-bar {
 	padding-left: 450px;
@@ -1621,4 +1622,111 @@ td:first-child {
 	text-align: left;
 	vertical-align: top;
 	margin: 20px 0;
+}
+/* checkout */
+.voucher {
+	padding-top: 30px;
+	margin: 0 20px;
+}
+.checkoutHeading {
+	font-family: "Poppins";
+	font-size: 22px;
+	vertical-align: top;
+	line-height: 30px;
+	color: var(--black);
+	font-weight: 500;
+}
+.prodCheckout1 {
+	margin-left: 10px;
+	margin-right: 600px;
+}
+.prodCheckout2,
+.prodCheckout3 {
+	padding-right: 100px;
+}
+.checkoutBar {
+	width: 100%;
+	height: 2px;
+	background-color: var(--lightGray);
+	margin: 30px 0;
+}
+.img1text {
+	text-align: center;
+	font-family: "Poppins";
+	vertical-align: top;
+	line-height: 30px;
+	color: var(--black);
+	font-size: 18px;
+	color: var(--black);
+	font-weight: 400;
+	width: 197px;
+	height: 27px;
+	margin: 0 20px;
+}
+.checkoutPrice {
+	vertical-align: top;
+	margin-left: 340px;
+}
+.checkoutUnitPrice {
+	vertical-align: top;
+	margin-left: 100px;
+}
+.qty {
+	width: 110px;
+	height: 45px;
+	background-color: var(--lightGray);
+	padding: 10px;
+	border-radius: 2px;
+	vertical-align: top;
+	margin-left: 80px;
+}
+.checkoutDetails {
+	margin-left: 900px;
+	padding-right: 100px;
+	line-height: 42px;
+}
+.subtotal,
+.subtotalNum {
+	vertical-align: top;
+	padding-right: 60px;
+}
+.shippingfee,
+.shippingfeeNum {
+	vertical-align: top;
+	padding-right: 40px;
+}
+.coupon,
+.couponNum {
+	vertical-align: top;
+	padding-right: 75px;
+}
+.total,
+.totalNum {
+	vertical-align: top;
+	padding-right: 40px;
+
+	font-family: "Poppins";
+	line-height: 30px;
+	font-size: 30px;
+	font-weight: 500;
+}
+.rowBar {
+	width: 370px;
+	height: 2px;
+	background-color: var(--lightGray);
+	margin-left: 800px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.checkoutBtn {
+	width: 324px;
+	height: 60px;
+	background-color: var(--blue);
+	margin-left: 840px;
+	color: var(--white);
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 20px;
+	border-radius: 5px;
 }
