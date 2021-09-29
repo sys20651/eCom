@@ -1236,6 +1236,7 @@ aside .bestSeller .cards {
 	background-color: var(--white);
 	filter: drop-shadow(0 0 3px var(--lightGray));
 	margin: 50px 250px;
+	padding: 30px 0px;
 }
 
 .heading {
