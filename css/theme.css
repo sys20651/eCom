@@ -34,6 +34,9 @@ Colors:
 	--lightGray: #eeeeee;
 	--darkBlue: #223263;
 	--yellow: #ffc600;
+	--fb: #385c8e;
+	--fbHover: #507cbb;
+	--fbFocus: #274268;
 
 	/* Font Size */
 	--fontSize: 14px;
@@ -551,19 +554,20 @@ footer {
 .footer .footerOffers {
 	border-bottom: 2px solid var(--white);
 	position: relative;
-	margin: 75px 275px 0px;
+	margin: 75px 125px 0px;
 	padding-bottom: 69px;
 	text-align: left;
 }
+.footer .footerHead {
+	margin: 0px 125px 0px;
+	padding-top: 75px;
+}
 
-.footer th {
+.footer th,
+.footerOffers .col .head {
 	padding-bottom: 30px;
 	font-weight: normal;
 	font-size: var(--fontSizeMd);
-}
-
-.footer th:not(:last-child) {
-	width: 262px;
 }
 
 .footer td {
@@ -571,10 +575,14 @@ footer {
 	line-height: 21px;
 }
 
-.footer .footerHead {
-	margin: 0 auto;
-	padding-top: 120px;
-	padding-left: 275px;
+.footerOffers .col {
+	width: 24%;
+	text-align: left;
+	display: inline-block;
+}
+
+.footerOffers .data span {
+	display: block;
 }
 
 a + p {
@@ -615,7 +623,7 @@ a + p {
 .foot span {
 	font-size: 14px;
 	line-height: 17px;
-	padding-left: 275px;
+	padding-left: 150px;
 	vertical-align: top;
 }
 .foot .cards {
@@ -820,7 +828,6 @@ article .bestSeller .row {
 .main aside,
 .main article {
 	float: left;
-	min-height: 500px;
 }
 
 .main aside {
@@ -877,49 +884,50 @@ article .bestSeller .row {
 	height: 29px;
 }
 
-.main table .cir-color:hover,
-.main table .cir-color:focus {
+.cir-color:hover,
+.cir-color:focus,
+.circle:hover,
+.circle:focus {
 	border: 1px solid var(--dark);
 }
 
-.main table .cir-color.blue:hover {
+.blue:hover {
 	filter: drop-shadow(0 0 2px var(--blue));
 }
 
-.main table .cir-color.red {
-	background-color: var(--red);
+.red {
+	background-color: var(--red) !important;
 }
 
-.main table .cir-color.red:hover {
+.red:hover {
 	filter: drop-shadow(0 0 2px var(--red));
 }
 
-.main table .cir-color.black:hover {
+.black:hover {
 	filter: drop-shadow(0 0 2px var(--black));
 }
 
-.main table .cir-color.black {
-	background-color: var(--dark);
+.black {
+	background-color: var(--dark) !important;
 }
-.main table .cir-color.green:hover {
+.green:hover {
 	filter: drop-shadow(0 0 2px var(--green));
 }
-.main table .cir-color.green {
-	background-color: var(--green);
+.green {
+	background-color: var(--green) !important;
 }
-.main table .cir-color.pink:hover {
+.pink:hover {
 	filter: drop-shadow(0 0 2px var(--pink));
 }
-
-.main table .cir-color.pink {
-	background-color: var(--pink);
+.pink {
+	background-color: var(--pink) !important;
 }
-.main table .cir-color.yellow:hover {
+.yellow:hover {
 	filter: drop-shadow(0 0 2px var(--yellow));
 }
 
-.main table .cir-color.yellow {
-	background-color: var(--yellow);
+.yellow {
+	background-color: var(--yellow) !important;
 }
 
 .main aside .more {
@@ -1000,14 +1008,18 @@ article .bestSeller .row {
 
 .productList .image {
 	float: left;
-	width: 30%;
+	width: 35%;
 }
 
 .productList .details {
 	float: right;
 	margin-top: -275px;
 	padding-left: 10px;
-	width: 70%;
+	width: 65%;
+}
+
+.productDetail .productList .details {
+	margin-top: -375px;
 }
 
 .productList .addToCart {
@@ -1027,7 +1039,7 @@ article .bestSeller .row {
 }
 
 article .container .row {
-	margin-bottom: 20px;
+	margin: 20px 0px;
 }
 
 article .dealBar span {
@@ -1037,4 +1049,107 @@ article .dealBar span {
 
 article .dealBar span:hover {
 	background-color: var(--grayHover);
+}
+
+/* Product Display Page */
+
+.main .productDetail article {
+	width: 70%;
+}
+
+.main .productDetail aside {
+	width: 30%;
+}
+
+.productDetail .productList .image {
+	width: 35%;
+}
+
+.productDetail .productList .details {
+	font-size: var(--fontSize);
+	font-family: Poppins;
+	width: 65%;
+}
+
+aside .bestSeller .cards {
+	margin: 0px 40px;
+}
+
+.details .info span + span {
+	margin: 16px 70px;
+}
+
+.details .info {
+	margin: 8px 0px;
+}
+
+.fb {
+	background-color: var(--fb);
+}
+
+.fb:hover {
+	background-color: var(--fbHover);
+}
+
+.fb:focus {
+	background-color: var(--fbFocus);
+}
+
+.productDetail .details .social {
+	min-width: 245px;
+	margin: 10px 5px;
+}
+
+.productList .details .row {
+	border-bottom: 2px solid var(--lightGray);
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: var(--blue);
+	min-height: 20px;
+	min-width: 20px;
+	margin-bottom: -5px;
+}
+
+.info span + div {
+	margin-left: 28px;
+}
+
+.info .size {
+	margin-left: 100px;
+}
+
+.info .size select {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.info .size option {
+	text-align: left;
+	min-width: 120px;
+}
+
+.info div {
+	display: inline-block;
+}
+
+.info .circle + .circle {
+	margin-left: 14px;
+}
+
+.row .addsub i {
+	color: var(--blue);
+	font-style: normal;
+	font-weight: 400;
+	margin: 20px 12px;
+}
+
+.row .addsub + .btn {
+	margin-left: 180px;
+	margin-bottom: 22px;
+}
+
+.image .smallImage img {
+	max-width: 24%;
 }
