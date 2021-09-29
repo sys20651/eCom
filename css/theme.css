@@ -1042,3 +1042,25 @@ textarea:hover {
 	margin-left: 120px;
 	margin-top: 10px;
 }
+.footer-con {
+	width: 100%;
+	padding-left: 200px;
+	padding-top: 100px;
+}
+.footerDiv,
+.footerDiv2,
+.footerDiv3,
+.footerDiv4 {
+	width: 20%;
+	display: inline-block;
+	margin-right: 50px;
+}
+.footerHead {
+	color: var(--black);
+	font-family: "Poppins";
+	font-size: 18px;
+	font-weight: 500;
+	text-align: left;
+	vertical-align: top;
+	margin: 20px 0;
+}
