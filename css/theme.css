@@ -1397,3 +1397,47 @@ aside .bestSeller .cards {
 	text-align: center;
 	letter-spacing: 0.5px;
 }
+
+/* Banner */
+
+.banner .container {
+	padding-top: 90px;
+}
+
+.banner .container .row {
+	background-color: var(--blue);
+	min-height: 550px;
+}
+
+.banner .image {
+	margin-left: 500px;
+	margin-top: -330px;
+	width: 60%;
+}
+
+.banner .content {
+	color: var(--white);
+	display: inline-block;
+	left: 60px;
+	max-width: 40%;
+	position: relative;
+	top: 160px;
+}
+
+.banner .content .head {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 82px;
+	display: block;
+}
+
+.banner .content span {
+	font-weight: normal;
+}
+
+.banner .content a {
+	color: var(--white);
+	display: inline-block;
+	padding: 20px 0px;
+	text-decoration: underline;
+}
