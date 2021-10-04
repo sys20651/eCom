@@ -103,8 +103,8 @@ select {
 .container {
 	max-width: 1265px;
 	margin: 0 auto;
-	padding: 0 15px;
 	outline: 1px solid red;
+	padding: 0 15px;
 }
 
 .row {
@@ -293,6 +293,13 @@ header .min-header {
 .user-account .menu li:not(:last-child) {
 	margin-right: 10px;
 }
+
+/* @media screen and (max-width: 600px) {
+	.menu .nav-item {
+		float: none;
+		width: 100%;
+	}
+} */
 
 /* .user-account .menu li:last-child {
   margin-right: 0;
