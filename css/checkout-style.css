@@ -1730,3 +1730,6 @@ td:first-child {
 	padding-top: 20px;
 	border-radius: 5px;
 }
+.checkoutBtn:hover {
+	background-color: var(--blueHover);
+}
