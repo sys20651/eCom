@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+
+/*
+Colors:
+    Hex:
+            =>      R  G  B
+            =>      00 00 00        => 000;
+            =>      99 99 99        => 999;
+            =>      aa aa aa        => aaa;
+            =>      ff ff ff        => fff;
+
+    RGB/RGBa:
+            =>      rgb(0, 0, 0);               => Black Color
+            =>      rgb(255, 255, 255);         => White Color
+            =>      rgba(0, 0, 0, 0/1);         => Black with Transparency
+            =>      rgba(255, 255, 255, 0/1);   => White with Transparency
+*/
+
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #373737;
+	--red: #ff4858;
+	--blue: #40bfff;
+	--skyBlue: #bcddfe;
+	--gray: #999999;
+	--lightGray: #eeeeee;
+
+	/* Font Size */
+	--fontSize: 14px;
+	--fontSizeSm: 16px;
+	--fontSizeMd: 20px;
+	--fontSizeLg: 24px;
+	--fontSizeXl: 30px;
+}
+
+html {
+	scroll-behavior: smooth;
+	-ms-scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+}
+
+body {
+	color: #000;
+	font-family: "Poppins", sans-serif;
+	font-size: var(--fontSize);
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Typography CSS */
+a {
+	text-decoration: none;
+}
+
+a:link,
+a:focus,
+a:hover {
+	color: black;
+}
+
+a:visited {
+}
+
+p + p {
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+select {
+	border: 0;
+	border-radius: 0;
+	font-size: var(--fontSizeMd);
+	padding: 5px 10px;
+}
+
+/* Helper Class CSS */
+.row:after,
+.clearfix::after,
+.container::after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	outline: 1px solid red;
+}
+
+/* CSS Grid */
+.col .box {
+	background-color: rgb(138, 255, 226);
+	display: block;
+	min-height: 600px;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.col {
+	background-color: rgb(204, 204, 204);
+	float: left;
+
+	opacity: 0.5;
+	padding: 0 15px;
+}
+
+.offset {
+	padding: 0 15px;
+}
+
+.left {
+	float: left;
+}
+
+.rigth {
+	float: right;
+}
+
+.col-1 {
+	width: 8.3333%;
+	/* width: 100px; */
+}
+
+.col-2 {
+	width: 16.6666%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.3333%;
+}
+
+.col-5 {
+	width: 41.6665%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.3331%;
+}
+
+.col-8 {
+	width: 66.6666%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.3333%;
+}
+
+.col-11 {
+	width: 91.6666%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.offset-1 {
+	width: 8.33%;
+}
+
+.offset-2 {
+	width: 16.66%;
+}
+
+.offset-3 {
+	width: 25%;
+}
+
+.offset-4 {
+	width: 33.33%;
+}
+
+.offset-5 {
+	width: 41.66%;
+}
+
+.offset-6 {
+	width: 50%;
+}
+
+.offset-7 {
+	width: 58.33%;
+}
+
+.offset-9 {
+	width: 66.66%;
+}
+
+.offset-10 {
+	width: 75%;
+}
+
+.offset-11 {
+	width: 83.33%;
+}
+
+.offset-12 {
+	width: 100%;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.text-muted {
+	color: var(--gray) !important;
+}
+
+/* Header */
+header {
+	font-size: var(--fontSizeMd);
+	position: relative;
+}
+
+header .min-header {
+	border-bottom: 1px solid var(--lightGray);
+	padding: 15px 0;
+}
+
+.min-header .config {
+	float: left;
+}
+
+/* User Config */
+.min-header .config .dropdown {
+	float: left;
+}
+
+.min-header .config .dropdown + .dropdown {
+	margin-left: 15px;
+}
+
+/* User Account */
+.min-header .user-account {
+	float: right;
+}
+
+.user-account .menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-account .menu li {
+	float: left;
+}
+
+.user-account .menu li:not(:last-child) {
+	margin-right: 10px;
+}
+
+/* .user-account .menu li:last-child {
+  margin-right: 0;
+} */
+
+.user-account .menu a {
+	color: var(--dark);
+	display: block;
+	padding: 5px 10px;
+}
+
+.user-account .menu span + span {
+	margin-left: 20px;
+}
+
+/* Navbar CSS */
+.navbar {
+	padding: 30px 0;
+}
+
+.navbar .nav {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar .nav li {
+	float: left;
+}
+
+.navbar .nav li:not(:first-child) {
+	margin-left: 70px;
+}
+
+.navbar .nav .nav-link {
+	font-size: var(--fontSizeLg);
+	line-height: 36px;
+	padding: 0 10px;
+}
+
+.navbar .nav .nav-link:link,
+.navbar .nav .nav-link:visited {
+	color: var(--dark);
+}
+
+.navbar .nav .nav-link:hover,
+.navbar .nav .nav-link:focus,
+.navbar .nav .nav-link.active,
+.navbar .nav .active .nav-link {
+	color: var(--blue);
+}
