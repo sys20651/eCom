@@ -576,11 +576,23 @@ header .min-header {
     background-color: var(--skyBlue);
 }
 
+/* .card-group .card {
+    text-align: center;
+} */
+
+.card-group .card-header {
+    background-color: transparent;
+}
+
+.card-group .icon {
+    color: var(--red);
+}
+
 /* Respnsive Layout CSS */
-html,
+/* html,
 body {
     height: 100%;
-}
+} */
 
 .rwd {
     background-color: var(--green);
