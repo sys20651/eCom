@@ -297,6 +297,31 @@ select {
     padding-bottom: 60px !important;
 }
 
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.px-1 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.px-2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.px-3 {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+}
+
+.px-4 {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
 .mt-0 {
     margin-top: 0 !important;
 }
