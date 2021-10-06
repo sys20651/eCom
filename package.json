@@ -1,0 +1,21 @@
+{
+  "name": "ecom",
+  "version": "1.0.0",
+  "description": "ecom project using html and css",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "rwd"
+  ],
+  "author": "Jawad",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
