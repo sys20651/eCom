@@ -1,0 +1,132 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--dark: #373737;
+	--red: #ff4858;
+	--pink: #fb7181;
+	--blue: #40bfff;
+	--blueHover: #79d0fc;
+	--blueFocus: #00aaff;
+	--skyBlue: #bcddfe;
+	--fb: #385c8e;
+	--fbHover: #507cbb;
+	--fbFocus: #274268;
+	--darkBlue: #223263;
+	--gray: #999999;
+	--grayHover: #bbbbbb;
+	--grayFocus: #777777;
+	--green: #36bc74;
+	--lightGray: #eeeeee;
+	--yellow: #ffc600;
+
+	/* Font Size */
+	--fontSize: 14px;
+	--fontSizeSm: 16px;
+	--fontSizeMd: 20px;
+	--fontSizeLg: 24px;
+	--fontSizeXl: 30px;
+}
+
+html {
+	scroll-behavior: smooth;
+	-ms-scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
+}
+
+body {
+	color: #000;
+	font-family: "Poppins", sans-serif;
+	font-size: var(--fontSize);
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Helper Class CSS */
+.row:after,
+.clearfix::after,
+.container::after {
+	content: "";
+	display: table;
+	width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	outline: 2px solid red;
+	padding: 0 15px;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+/* Column */
+
+[class*="col-"] {
+	float: left;
+	width: 100%;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col {
+	border: 2px solid var(--blue);
+	min-height: 1px;
+	position: relative;
+	padding: 5px;
+	text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 650px) {
+	/* For desktop: */
+	.col-1 {
+		width: 16.66%;
+	}
+	.col-2 {
+		width: 33.33%;
+	}
+	.col-3 {
+		width: 50%;
+	}
+	.col-4 {
+		width: 66.66%;
+	}
+	.col-5 {
+		width: 83.33%;
+	}
+	.col-6 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.col-1 {
+		width: 33.33%;
+	}
+}
+
+@media only screen and (max-width: 790px) {
+	.col-1 {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.col-1 {
+		width: 100%;
+	}
+}
