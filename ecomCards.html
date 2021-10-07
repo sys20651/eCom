@@ -1,189 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="node_modules/font-awesome-animation/css/font-awesome-animation.min.css">
-		<link rel="stylesheet" href="fonts/icomoon/style.css" />
-		<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
-    	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 
-		<link rel="stylesheet" href="css/theme.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Ecom Cards</title>
-	</head>
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome-animation/css/font-awesome-animation.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css" />
+	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
 
-	<body>
-		<!-- Header -->
-		<header>
-			<!-- Min Header -->
-			<div class="min-header clearfix">
-				<div class="container">
-					<div class="row">
-						<div class="col col-4">
-							<div class="config">
-								<!-- Language -->
-								<div class="dropdown lang">
-									<select class="select">
-										<option value="">EN</option>
-										<option value="">FR</option>
-										<option value="">GR</option>
-									</select>
-								</div>
-		
-								<!-- Currecny -->
-								<div class="dropdown currency">
-									<select class="select">
-										<option value="">USD</option>
-										<option value="">GBP</option>
-										<option value="">EUR</option>
-									</select>
-								</div>
+	<link rel="stylesheet" href="css/theme.css" />
+
+	<title>Ecom Cards</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<!-- Min Header -->
+		<div class="min-header clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col col-4">
+						<div class="config">
+							<!-- Language -->
+							<div class="dropdown lang">
+								<select class="select">
+									<option value="">EN</option>
+									<option value="">FR</option>
+									<option value="">GR</option>
+								</select>
 							</div>
-						</div>
 
-						<div class="col col-8">
-							<!-- User Account -->
-							<div class="user-account">
-								<ul class="menu">
-									<li>
-										<a href="#" class="nav-item">
-											<i class="fas fa-user"></i>
-											<span>My Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="nav-item">
-											<i class="fas fa-shopping-cart"></i>
-											<span class="badge faa-tada faa-slow animated">2</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="nav-item">
-											<span>Items</span>
-											<span class="text-muted">& 0.00</span>
-										</a>
-									</li>
-									<li>
-										<a href="#" class="nav-item">
-											<i class="fas fa-search"></i>
-										</a>
-									</li>
-								</ul>
+							<!-- Currecny -->
+							<div class="dropdown currency">
+								<select class="select">
+									<option value="">USD</option>
+									<option value="">GBP</option>
+									<option value="">EUR</option>
+								</select>
 							</div>
 						</div>
 					</div>
 
-				</div>
-			</div>
-
-			<!-- Navbar -->
-			<div class="navbar">
-				<div class="container">
-					<div class="row">
-						<div class="col col-4">
-							<!-- Brand -->
-							<a href="#" class="brand">
-								<span class="logo"></span>
-								<span class="name">E-comm</span>
-							</a>
-						</div>
-
-						<div class="col col-8">
-							<!-- Nav Menu -->
-							<ul class="nav">
-								<li class="nav-item">
-									<a href="index.html" class="nav-link">Home</a>
-		
-									<div class="dropdown">
-										<div class="dropdown-content">
-											<table>
-												<tr class="text-muted">
-													<th>Category</th>
-													<th>Category</th>
-													<th>Category</th>
-												</tr>
-												<tr>
-													<td>Sneakers</td>
-													<td>Sneakers</td>
-													<td>Sneakers</td>
-												</tr>
-												<tr>
-													<td>Sandles</td>
-													<td>Sandles</td>
-													<td>Sandles</td>
-												</tr>
-												<tr>
-													<td>Trainers</td>
-													<td>Trainers</td>
-													<td>Trainers</td>
-												</tr>
-											</table>
-										</div>
-									</div>
+					<div class="col col-8">
+						<!-- User Account -->
+						<div class="user-account">
+							<ul class="menu">
+								<li>
+									<a href="#" class="nav-item">
+										<i class="fas fa-user"></i>
+										<span>My Profile</span>
+									</a>
 								</li>
-		
-								<li class="nav-item">
-									<a href="productGrid.html" class="nav-link">Bags</a>
+								<li>
+									<a href="#" class="nav-item">
+										<i class="fas fa-shopping-cart"></i>
+										<span class="badge faa-tada faa-slow animated">2</span>
+									</a>
 								</li>
-		
-								<li class="nav-item">
-									<a href="productGrid.html" class="nav-link">Sneaker</a>
+								<li>
+									<a href="#" class="nav-item">
+										<span>Items</span>
+										<span class="text-muted">& 0.00</span>
+									</a>
 								</li>
-		
-								<li class="nav-item">
-									<a href="productGrid.html" class="nav-link">Belt</a>
-								</li>
-		
-								<li class="nav-item">
-									<a href="contact.html" class="nav-link">Contact</a>
+								<li>
+									<a href="#" class="nav-item">
+										<i class="fas fa-search"></i>
+									</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</header>
-		<!-- Slider -->
-		<div class="container py-4">
-			<div class="slider">
-				<div class="slide">
-					<div class="card-image">
-						<img src="images/slider.jpg" alt="Image here">
-					</div>
-		
-					<div class="card-overlay">
-						<h1  class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
-					</div>
-				</div>
 
-				<div class="slide">
-					<div class="card-image">
-						<img src="images/imggg.jpg" alt="Image here">
-					</div>
-		
-					<div class="card-overlay">
-						<h1  class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
-					</div>
-				</div>
-
-				<div class="slide">
-					<div class="card-image">
-						<img src="images/hunza.jpg" alt="Image here">
-					</div>
-		
-					<div class="card-overlay">
-						<h1  class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
-					</div>
-				</div>
 			</div>
 		</div>
 
-		<!-- Card Slider -->
-		<div class="cardSlider py-4">
+		<!-- Navbar -->
+		<div class="navbar">
+			<div class="container">
+				<!-- Brand -->
+				<a href="#" class="brand pull-left">
+					<span class="logo"></span>
+					<span class="name">E-comm</span>
+				</a>
+
+				<!-- Nav Menu -->
+				<ul class="nav clearfix">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+
+						<div class="dropdown">
+							<div class="dropdown-content">
+								<table>
+									<tr class="text-muted">
+										<th>Category</th>
+										<th>Category</th>
+										<th>Category</th>
+									</tr>
+									<tr>
+										<td>Sneakers</td>
+										<td>Sneakers</td>
+										<td>Sneakers</td>
+									</tr>
+									<tr>
+										<td>Sandles</td>
+										<td>Sandles</td>
+										<td>Sandles</td>
+									</tr>
+									<tr>
+										<td>Trainers</td>
+										<td>Trainers</td>
+										<td>Trainers</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a href="productGrid.html" class="nav-link">Bags</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="productGrid.html" class="nav-link">Sneaker</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="productGrid.html" class="nav-link">Belt</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Slider -->
+	<div class="container py-4">
+		<div class="slider">
+			<div class="slide">
+				<div class="card-image">
+					<img src="images/slider.jpg" alt="Image here">
+				</div>
+
+				<div class="card-overlay">
+					<h1 class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="card-image">
+					<img src="images/imggg.jpg" alt="Image here">
+				</div>
+
+				<div class="card-overlay">
+					<h1 class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="card-image">
+					<img src="images/hunza.jpg" alt="Image here">
+				</div>
+
+				<div class="card-overlay">
+					<h1 class="title px-4 mt-4">Super Flash Sale <br> 50% Off</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Card Slider -->
+	<div class="cardSlider">
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img01.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img02.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img01.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="card card-md">
+			<div class="card-image">
+				<img src="images/img02.jpg" alt="Image here">
+			</div>
+
+			<div class="card-overlay">
+				<div class="card-title">
+					FS - QUILTED MAXI <br> CROSS BAG
+				</div>
+
+				<div class="card-body">
+					<span class="text-muted"><strike>$599</strike></span>
+					<span class="off">24%</span>
+					<span class="price block">
+						$299
+					</span>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container py-4">
+		<div class="row">
 			<div class="col col-4">
 				<div class="card card-md">
 					<div class="card-image">
@@ -251,200 +376,283 @@
 
 					</div>
 				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container ">
+		<div class="row mt-1">
+			<div class="col col-12">
+				<h2 class="text-center">BEST SELLER</h2>
+			</div>
+		</div>
+
+		<div class="row bestSeller">
+			<div class="col col-8 col-offset-2">
+				<div class="col col-10 col-offset-1 ">
+					<div class="col col-2 text-center mb-1 col-offset-1 ">
+						<a>
+							All
+						</a>
+					</div>
+					<div class="col col-2 text-center mb-1">
+						<a>
+							Bags
+						</a>
+					</div>
+					<div class="col col-2 text-center mb-1 ">
+						<a>
+							Sneakers
+						</a>
+					</div>
+					<div class="col col-2 text-center mb-1">
+						<a>
+							Belts
+						</a>
+					</div>
+					<div class="col col-2 text-center mb-1 ">
+						<a>
+							Sunglasses
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-3">
+				<div class="card card-md">
+					<div class="card-image">
+						<img src="images/product1.jpg" alt="Image here">
+					</div>
+					<div class="card-body ">
+						<div class="card-title">Nike Air Max 270 React</div>
+						<div class="stars">
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+						</div>
+						<div class="details">
+							<span class="text-muted"><strike>$599</strike></span>
+							<span class="off">24%</span>
+							<span class="price">$299</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-3">
+				<div class="card card-md">
+					<div class="card-image">
+						<img src="images/product1.jpg" alt="Image here">
+					</div>
+					<div class="card-body">
+						<div class="card-title">Nike Air Max 270 React</div>
+						<div class="stars">
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+						</div>
+						<div class="details">
+							<span class="text-muted"><strike>$599</strike></span>
+							<span class="off">24%</span>
+							<span class="price">$299</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-3">
+				<div class="card card-md">
+					<div class="card-image">
+						<img src="images/product1.jpg" alt="Image here">
+					</div>
+					<div class="card-body">
+						<div class="card-title">Nike Air Max 270 React</div>
+						<div class="stars">
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+						</div>
+						<div class="details">
+							<span class="text-muted"><strike>$599</strike></span>
+							<span class="off">24%</span>
+							<span class="price">$299</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-3">
+				<div class="card card-md">
+					<div class="card-image">
+						<img src="images/product1.jpg" alt="Image here">
+					</div>
+					<div class="card-body">
+						<div class="card-title">Nike Air Max 270 React</div>
+						<div class="stars">
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated checked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+							<span class="fas fa-star faa-pulse animated unchecked"></span>
+						</div>
+						<div class="details">
+							<span class="text-muted"><strike>$599</strike></span>
+							<span class="off">24%</span>
+							<span class="price">$299</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container py-4">
+		<div class="row">
+			<div class="col col-12 bg-primary">
+				<div class="card card-lg banner">
+					<div class="content col col-6 py-4">
+						<span class="head block">Adidas Men Running Sneakers</span>
+						<span>Performance and design. Taken right to the edge.</span>
+						<a href="#" class="block">SHOP NOW</span>
+					</div>
+					<div class="col col-6 card-image">
+						<img src="images/banner.png" alt="Banner here">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mb-2">
+		<div class="row py-1">
+			<div class="col col-12">
+				<h2 class="text-center">LATEST NEWS</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-4">
+				<div class="card py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div>
+								<img class="mt-2" src="images/Nikelogo.jpg" alt="Image here">
+							</div>
+						</div>
+						<div class="col col-7">
+							<span class="text-muted">Jan 01, 2018</span>
+							<span class="block card-title">
+								Fashion Industry
+							</span>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="col col-4">
-				<div class="card card-md">
-					<div class="card-image">
-						<img src="images/img.jpg" alt="Image here">
-					</div>
-
-					<div class="card-overlay">
-						<div class="card-title">
-							FS - QUILTED MAXI <br> CROSS BAG
+				<div class="card py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div>
+								<img class="mt-2" src="images/news1.jpg" alt="Image here">
+							</div>
 						</div>
-
-						<div class="card-body">
-							<span class="text-muted"><strike>$599</strike></span>
-							<span class="off">24%</span>
-							<span class="price block">
-								$299
+						<div class="col col-7">
+							<span class="text-muted">Jan 01, 2018</span>
+							<span class="block card-title">
+								Fashion Industry
 							</span>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 
 			<div class="col col-4">
-				<div class="card card-md">
-					<div class="card-image">
-						<img src="images/img01.jpg" alt="Image here">
-					</div>
-
-					<div class="card-overlay">
-						<div class="card-title">
-							FS - QUILTED MAXI <br> CROSS BAG
+				<div class="card py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div>
+								<img class="mt-2" src="images/news2.jpg" alt="Image here">
+							</div>
 						</div>
-
-						<div class="card-body">
-							<span class="text-muted"><strike>$599</strike></span>
-							<span class="off">24%</span>
-							<span class="price block">
-								$299
+						<div class="col col-7">
+							<span class="text-muted">Jan 01, 2018</span>
+							<span class="block card-title">
+								Fashion Industry
 							</span>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							</p>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container mb-2">
+		<div class="row py-1">
+			<div class="col col-12">
+				<h2 class="text-center">FEATURED PRODUCTS</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-4">
+				<div class="card small py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div class="card-image">
+								<img class="mt-0" src="images/product.jpg" alt="Image here">
+							</div>
+						</div>
+						<div class="col col-7 mt-1">
+							<span class="block card-title">
+								Blue Swade Nike Sneakers
+							</span>
+							<div class="stars">
+								<span class="fas fa-star faa-pulse animated checked"></span>
+								<span class="fas fa-star faa-pulse animated checked"></span>
+								<span class="fas fa-star faa-pulse animated checked"></span>
+								<span class="fas fa-star faa-pulse animated unchecked"></span>
+								<span class="fas fa-star faa-pulse animated unchecked"></span>
+							</div>
+
+							<div class="details">
+								<span class="price">$299</span>
+								<span class="text-muted"><strike>$599</strike></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col col-4">
-				<div class="card card-md">
-					<div class="card-image">
-						<img src="images/img02.jpg" alt="Image here">
-					</div>
-
-					<div class="card-overlay">
-						<div class="card-title">
-							FS - QUILTED MAXI <br> CROSS BAG
+				<div class="card small py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div class="card-image">
+								<img class="mt-0" src="images/product.jpg" alt="Image here">
+							</div>
 						</div>
-
-						<div class="card-body">
-							<span class="text-muted"><strike>$599</strike></span>
-							<span class="off">24%</span>
-							<span class="price block">
-								$299
+						<div class="col col-7 mt-1">
+							<span class="block card-title">
+								Blue Swade Nike Sneakers
 							</span>
-						</div>
-
-					</div>
-				</div>	
-			</div>
-		</div>
-		
-		
-		<div class="container py-4">
-			<div class="row">
-				<div class="col col-4">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/img.jpg" alt="Image here">
-						</div>
-
-						<div class="card-overlay">
-							<div class="card-title">
-								FS - QUILTED MAXI <br> CROSS BAG
-							</div>
-
-							<div class="card-body">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
-								<span class="price block">
-									$299
-								</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/img01.jpg" alt="Image here">
-						</div>
-
-						<div class="card-overlay">
-							<div class="card-title">
-								FS - QUILTED MAXI <br> CROSS BAG
-							</div>
-
-							<div class="card-body">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
-								<span class="price block">
-									$299
-								</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/img02.jpg" alt="Image here">
-						</div>
-
-						<div class="card-overlay">
-							<div class="card-title">
-								FS - QUILTED MAXI <br> CROSS BAG
-							</div>
-
-							<div class="card-body">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
-								<span class="price block">
-									$299
-								</span>
-							</div>
-
-						</div>
-					</div>
-
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="container ">
-			<div class="row mt-1">
-				<div class="col col-12">
-					<h2 class="text-center">BEST SELLER</h2>
-				</div>
-			</div>
-
-			<div class="row bestSeller">
-				<div class="col col-8 col-offset-2">
-					<div class="col col-10 col-offset-1 ">
-						<div class="col col-2 text-center mb-1 col-offset-1 ">
-							<a>
-								All
-							</a>
-						</div>
-						<div class="col col-2 text-center mb-1">
-							<a>
-								Bags
-							</a>
-						</div>
-						<div class="col col-2 text-center mb-1 ">
-							<a>
-								Sneakers
-							</a>
-						</div>
-						<div class="col col-2 text-center mb-1">
-							<a>
-								Belts
-							</a>
-						</div>
-						<div class="col col-2 text-center mb-1 ">
-							<a>
-								Sunglasses
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-3">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/product1.jpg" alt="Image here">
-						</div>
-						<div class="card-body ">
-							<div class="card-title">Nike Air Max 270 React</div>
 							<div class="stars">
 								<span class="fas fa-star faa-pulse animated checked"></span>
 								<span class="fas fa-star faa-pulse animated checked"></span>
@@ -452,22 +660,28 @@
 								<span class="fas fa-star faa-pulse animated unchecked"></span>
 								<span class="fas fa-star faa-pulse animated unchecked"></span>
 							</div>
+
 							<div class="details">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
 								<span class="price">$299</span>
+								<span class="text-muted"><strike>$599</strike></span>
 							</div>
 						</div>
 					</div>
 				</div>
-				
-				<div class="col col-3">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/product1.jpg" alt="Image here">
+			</div>
+
+			<div class="col col-4">
+				<div class="card small py-2">
+					<div class="row">
+						<div class="col col-5">
+							<div class="card-image">
+								<img class="mt-0" src="images/product.jpg" alt="Image here">
+							</div>
 						</div>
-						<div class="card-body">
-							<div class="card-title">Nike Air Max 270 React</div>
+						<div class="col col-7 mt-1">
+							<span class="block card-title">
+								Blue Swade Nike Sneakers
+							</span>
 							<div class="stars">
 								<span class="fas fa-star faa-pulse animated checked"></span>
 								<span class="fas fa-star faa-pulse animated checked"></span>
@@ -475,433 +689,204 @@
 								<span class="fas fa-star faa-pulse animated unchecked"></span>
 								<span class="fas fa-star faa-pulse animated unchecked"></span>
 							</div>
+
 							<div class="details">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
 								<span class="price">$299</span>
+								<span class="text-muted"><strike>$599</strike></span>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="col col-3">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/product1.jpg" alt="Image here">
-						</div>
-						<div class="card-body">
-							<div class="card-title">Nike Air Max 270 React</div>
-							<div class="stars">
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated unchecked"></span>
-								<span class="fas fa-star faa-pulse animated unchecked"></span>
-							</div>
-							<div class="details">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
-								<span class="price">$299</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-3">
-					<div class="card card-md">
-						<div class="card-image">
-							<img src="images/product1.jpg" alt="Image here">
-						</div>
-						<div class="card-body">
-							<div class="card-title">Nike Air Max 270 React</div>
-							<div class="stars">
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated checked"></span>
-								<span class="fas fa-star faa-pulse animated unchecked"></span>
-								<span class="fas fa-star faa-pulse animated unchecked"></span>
-							</div>
-							<div class="details">
-								<span class="text-muted"><strike>$599</strike></span>
-								<span class="off">24%</span>
-								<span class="price">$299</span>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
-		
+	</div>
+
+	<div class="container py-4">
+		<div class="row">
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<img class="faa-passing animated" src="images/shipping.svg" alt="svg here">
+					</div>
+					<div class="card-body">
+						<span class="card-title">FREE SHIPPING</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<img class="faa-horizontal animated faa-slow" src="images/support.svg" alt="svg here">
+					</div>
+					<div class="card-body">
+						<span class="card-title">SUPPORT 24/7</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<img class="fa-spin faa-slow" src="images/refund.svg" alt="svg here">
+					</div>
+					<div class="card-body">
+						<span class="card-title">100% REFUND</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container py-4">
+		<div class="row">
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<i class="fas fa-thumbs-up faa-vertical faa-fast fa-5x animated"></i>
+					</div>
+					<div class="card-body">
+						<span class="card-title">FREE SHIPPING</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<i class="fa fa-wrench faa-wrench fa-5x animated"></i>
+					</div>
+					<div class="card-body">
+						<span class="card-title">SUPPORT 24/7</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col col-4">
+				<div class="card align-center py-1">
+					<div class="icon py-1">
+						<i class="fas fa-bell faa-ring fa-5x animated"></i>
+					</div>
+					<div class="card-body">
+						<span class="card-title">100% REFUND</span>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
 		<div class="container py-4">
 			<div class="row">
-				<div class="col col-12 bg-primary">
-					<div class="card card-lg banner">
-						<div class="content col col-6 py-4">
-							<span class="head block">Adidas Men Running Sneakers</span>
-							<span>Performance and design. Taken right to the edge.</span>
-							<a href="#" class="block">SHOP NOW</span>
-						</div>
-						<div class="col col-6 card-image">
-							<img src="images/banner.png" alt="Banner here">
+				<div class="footerHead">
+					<div class="container">
+						<div class="row">
+							<div class="col col-6 py-2">
+								<div class="company">
+									<a href="#" class="brand">
+										<span class="logo"></span>
+										<span class="name">E-comm</span>
+									</a>
+									<p>
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+										Ipsum has been the industry's standard dummy text
+										ever.Since the 1500s, when an unknown printer.
+									</p>
+								</div>
+							</div>
+							<div class="col col-3 py-3">
+								<div class="follow">
+									<span class="bold">Follow Us</span>
+									<p>Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+								</div>
+							</div>
+							<div class="col col-3 py-3">
+								<div class="contact">
+									<span class="bold py-2">Contact Us</span>
+									<p>
+										E-Comm <br />
+										4578 Marmora Road <br />
+										Glasgow D04 89GR
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="footerOffers">
+					<div class="container py-4">
+						<div class="row">
+							<div class="col col-3">
+								<div class="head">Information</div>
+								<div class="data py-2">
+									<span>About Us</span>
+									<span>Information</span>
+									<span>Privacy policy</span>
+									<span>Terms & Conditions</span>
+								</div>
+							</div>
+							<div class="col col-3">
+								<div class="head">Service</div>
+								<div class="data py-2">
+									<span>About Us</span>
+									<span>Information</span>
+									<span>Privacy policy</span>
+									<span>Terms & Conditions</span>
+								</div>
+							</div>
+
+							<div class="col col-3">
+								<div class="head">My Account</div>
+								<div class="data py-2">
+									<span>About Us</span>
+									<span>Information</span>
+									<span>Privacy policy</span>
+									<span>Terms & Conditions</span>
+								</div>
+							</div>
+
+							<div class="col col-3">
+								<div class="head">Offers</div>
+								<div class="data py-2">
+									<span>About Us</span>
+									<span>Information</span>
+									<span>Privacy policy</span>
+									<span>Terms & Conditions</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="foot">
+					<div class="row">
+						<div class="col col-8">
+							<span class="text-muted">© 2018 Ecommerce theme by www.bisenbaev.com</span>
+						</div>
+						<div class="col col-4 align-center">
+							<img src="images/card.png" alt="image here" class="cards" />
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
+	</footer>
 
-		<div class="container mb-2">
-			<div class="row py-1">
-				<div class="col col-12">
-					<h2 class="text-center">LATEST NEWS</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-4">
-					<div class="card py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div>
-									<img class="mt-2" src="images/Nikelogo.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7">
-								<span class="text-muted">Jan 01, 2018</span>
-								<span class="block card-title">
-									Fashion Industry
-								</span>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
-				<div class="col col-4">
-					<div class="card py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div>
-									<img class="mt-2" src="images/news1.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7">
-								<span class="text-muted">Jan 01, 2018</span>
-								<span class="block card-title">
-									Fashion Industry
-								</span>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+</body>
 
-				<div class="col col-4">
-					<div class="card py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div>
-									<img class="mt-2" src="images/news2.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7">
-								<span class="text-muted">Jan 01, 2018</span>
-								<span class="block card-title">
-									Fashion Industry
-								</span>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container mb-2">
-			<div class="row py-1">
-				<div class="col col-12">
-					<h2 class="text-center">FEATURED PRODUCTS</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-4">
-					<div class="card small py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div class="card-image">
-									<img class="mt-0" src="images/product.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7 mt-1">
-								<span class="block card-title">
-									Blue Swade Nike Sneakers
-								</span>
-								<div class="stars">
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-								</div>
-
-								<div class="details">
-									<span class="price">$299</span>
-									<span class="text-muted"><strike>$599</strike></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card small py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div class="card-image">
-									<img class="mt-0" src="images/product.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7 mt-1">
-								<span class="block card-title">
-									Blue Swade Nike Sneakers
-								</span>
-								<div class="stars">
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-								</div>
-
-								<div class="details">
-									<span class="price">$299</span>
-									<span class="text-muted"><strike>$599</strike></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card small py-2">
-						<div class="row">
-							<div class="col col-5">
-								<div class="card-image">
-									<img class="mt-0" src="images/product.jpg" alt="Image here">
-								</div>
-							</div>
-							<div class="col col-7 mt-1">
-								<span class="block card-title">
-									Blue Swade Nike Sneakers
-								</span>
-								<div class="stars">
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated checked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-									<span class="fas fa-star faa-pulse animated unchecked"></span>
-								</div>
-
-								<div class="details">
-									<span class="price">$299</span>
-									<span class="text-muted"><strike>$599</strike></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>			
-			</div>
-		</div>
-
-		<div class="container py-4">
-			<div class="row">
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<img class="faa-passing animated" src="images/shipping.svg" alt="svg here">
-						</div>
-						<div class="card-body">
-							<span class="card-title">FREE SHIPPING</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<img class="faa-horizontal animated faa-slow" src="images/support.svg" alt="svg here">
-						</div>
-						<div class="card-body">
-							<span class="card-title">SUPPORT 24/7</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<img class="fa-spin faa-slow" src="images/refund.svg" alt="svg here">
-						</div>
-						<div class="card-body">
-							<span class="card-title">100% REFUND</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container py-4">
-			<div class="row">
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<i class="fas fa-thumbs-up faa-vertical faa-fast fa-5x animated"></i>
-						</div>
-						<div class="card-body">
-							<span class="card-title">FREE SHIPPING</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<i class="fa fa-wrench faa-wrench fa-5x animated"></i>
-						</div>
-						<div class="card-body">
-							<span class="card-title">SUPPORT 24/7</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col col-4">
-					<div class="card align-center py-1">
-						<div class="icon py-1">
-							<i class="fas fa-bell faa-ring fa-5x animated"></i>
-						</div>
-						<div class="card-body">
-							<span class="card-title">100% REFUND</span>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container py-4">
-				<div class="row">
-					<div class="footerHead">
-						<div class="container">
-							<div class="row">
-								<div class="col col-6 py-2">
-									<div class="company">
-										<a href="#" class="brand">
-											<span class="logo"></span>
-											<span class="name">E-comm</span>
-										</a>
-										<p>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-											ever.Since the 1500s, when an unknown printer.
-										</p>
-									</div>
-								</div>
-								<div class="col col-3 py-3">
-									<div class="follow">
-										<span class="bold">Follow Us</span>
-										<p>Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
-									</div>
-								</div>
-								<div class="col col-3 py-3">
-									<div class="contact">
-										<span class="bold py-2">Contact Us</span>
-										<p>
-											E-Comm <br />
-											4578 Marmora Road <br />
-											Glasgow D04 89GR
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="footerOffers">
-						<div class="container py-4">
-							<div class="row">
-								<div class="col col-3">
-									<div class="head">Information</div>
-									<div class="data py-2">
-										<span>About Us</span>
-										<span>Information</span>
-										<span>Privacy policy</span>
-										<span>Terms & Conditions</span>
-									</div>
-								</div>
-								<div class="col col-3">
-									<div class="head">Service</div>
-									<div class="data py-2">
-										<span>About Us</span>
-										<span>Information</span>
-										<span>Privacy policy</span>
-										<span>Terms & Conditions</span>
-									</div>
-								</div>
-
-								<div class="col col-3">
-									<div class="head">My Account</div>
-									<div class="data py-2">
-										<span>About Us</span>
-										<span>Information</span>
-										<span>Privacy policy</span>
-										<span>Terms & Conditions</span>
-									</div>
-								</div>
-
-								<div class="col col-3">
-									<div class="head">Offers</div>
-									<div class="data py-2">
-										<span>About Us</span>
-										<span>Information</span>
-										<span>Privacy policy</span>
-										<span>Terms & Conditions</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="foot">
-						<div class="row">
-							<div class="col col-8">
-								<span class="text-muted">© 2018 Ecommerce theme by www.bisenbaev.com</span>
-							</div>
-							<div class="col col-4 align-center">
-								<img src="images/card.png" alt="image here" class="cards" />
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</footer>
-
-		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-		<script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-
-	</body>
 </html>
