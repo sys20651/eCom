@@ -588,6 +588,21 @@ header .min-header {
     color: var(--red);
 }
 
+/* Slick Slider */
+.eCom-slider .slick-prev,
+.eCom-slider .slick-next {
+    z-index: 99;
+}
+
+.eCom-slider .slick-prev {
+    left: 30px;
+}
+
+.eCom-slider .slick-next {
+    right: 30px;
+}
+
+/* ======================================================================== */
 /* Respnsive Layout CSS */
 /* html,
 body {
