@@ -346,6 +346,49 @@ select {
 	padding-bottom: 60px !important;
 }
 
+.pt-0 {
+	padding-top: 0 !important;
+}
+.pt-1 {
+	padding-top: 15px !important;
+}
+
+.pt-2 {
+	padding-top: 30px !important;
+}
+
+.pt-3 {
+	padding-top: 45px !important;
+}
+
+.pt-4 {
+	padding-top: 60px !important;
+}
+
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+
+.pb-1 {
+	padding-bottom: 15px !important;
+}
+
+.pb-2 {
+	padding-bottom: 30px !important;
+}
+
+.pb-3 {
+	padding-bottom: 45px !important;
+}
+
+.pb-4 {
+	padding-bottom: 60px !important;
+}
+
+.mt-neg {
+	margin-top: -85px !important;
+}
+
 .my-0 {
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
@@ -955,7 +998,7 @@ a + p {
 /* Slick Slider */
 .slick-prev::before,
 .slick-next::before {
-	color: var(--red);
+	color: var(--gray);
 	font-size: 50px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
@@ -1046,6 +1089,9 @@ a + p {
 	.navbar .nav li:not(:first-child) {
 		margin-left: 15px;
 	}
+	.slider2 {
+		display: none;
+	}
 }
 
 /* Mobile */
@@ -1122,9 +1168,7 @@ a + p {
 	a + p {
 		max-width: 100%;
 	}
-}
 
-@media (max-width: 767px) {
 	/* Navbar */
 	.navbar .pull-left,
 	.navbar .nav li {
@@ -1144,6 +1188,12 @@ a + p {
 		white-space: nowrap;
 	}
 
+	.min-header .user-account {
+		margin-top: 15px;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+
 	.navbar .nav li {
 		display: inline-block;
 	}
@@ -1154,7 +1204,13 @@ a + p {
 	}
 
 	.badge {
-		margin-top: 35px;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 614px) {
+	.badge {
+		margin-top: 50px;
 	}
 }
 
@@ -1184,5 +1240,8 @@ a + p {
 	.navbar .nav li .nav-link:focus {
 		background-color: var(--gray);
 		color: var(--black);
+	}
+	.cards {
+		display: none;
 	}
 }
