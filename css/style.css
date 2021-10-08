@@ -74,12 +74,12 @@ Colors:
 	.fade .slide .card-overlay h1 {
 		display: none;
 	}
-	img {
-		width: 100%;
-	}
+
 	footer {
-		object-fit: fill;
 		background-color: var(--skyBlue);
+	}
+	.footer-bar {
+		display: none;
 	}
 }
 
@@ -130,11 +130,11 @@ Colors:
 		float: none;
 		width: 100%;
 	}
-	.col.col-3,
+	/* .col.col-3,
 	.col.col-4 {
 		width: 100%;
-	}
-	.col.col-2 {
+	} */
+	/* .col.col-2 {
 		width: 100%;
 	}
 	.col.col-2 img {
@@ -142,7 +142,7 @@ Colors:
 	}
 	col.col-8 {
 		width: 100%;
-	}
+	} */
 
 	.card-image,
 	.card,
@@ -185,49 +185,54 @@ Colors:
 	a + p {
 		max-width: 100%;
 	}
+
+	.card-image {
+		width: 100%;
+		margin: 0;
+	}
+
+	.card-overlay .card-body {
+		padding: 0;
+	}
+
+	.card-body .details,
+	.card-overlay .card-body,
+	.card-body .price,
+	.card-body .stars {
+		margin: 10px 0;
+	}
+
+	.card-overlay .card-title {
+		padding: 5px 0;
+	}
+
+	.small img {
+		width: 50%;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	.row {
+		align-items: center;
+		text-align: center;
+	}
+
+	a + p {
+		max-width: 100%;
+	}
 }
+@media (max-width: 574px) {
+	.col.col-3,
+	.col.col-4 {
+		width: 100%;
+	}
 
-/* rrrr */
-
-/* Mobile */
-
-.card-image {
-	width: 100%;
-	margin: 0;
+	.col.col-2 {
+		width: 100%;
+	}
 }
-
-.card-overlay .card-body {
-	padding: 0;
-}
-
-.card-body .details,
-.card-overlay .card-body,
-.card-body .price,
-.card-body .stars {
-	margin: 10px 0;
-}
-
-.card-overlay .card-title {
-	padding: 5px 0;
-}
-
-.small img {
-	width: 50%;
-}
-
-.banner {
-	display: none;
-}
-
-.row {
-	align-items: center;
-	text-align: center;
-}
-
-a + p {
-	max-width: 100%;
-}
-
 @media (max-width: 767px) {
 	/* Navbar */
 	.navbar .pull-left,
@@ -247,10 +252,17 @@ a + p {
 		margin-top: 15px;
 		overflow-x: auto;
 		white-space: nowrap;
+		width: 100%;
 	}
 
 	.navbar .nav li {
 		display: inline-block;
+	}
+	.footer-cards .card-title-footer {
+		text-align: center;
+	}
+	.col.col-2 {
+		width: 100%;
 	}
 }
 
@@ -262,7 +274,13 @@ a + p {
 		margin: 15px -15px 0;
 		width: 100%;
 	}
-
+	.user-account .menu {
+		overflow: initial;
+		text-align: left;
+		white-space: initial;
+		margin: 15px -15px 0;
+		width: 100%;
+	}
 	.navbar .brand {
 		display: inline-block;
 		margin-bottom: 20px;
@@ -288,6 +306,9 @@ a + p {
 	.navbar .nav li .nav-link:focus {
 		background-color: var(--gray);
 		color: var(--black);
+	}
+	.footer-cards .card-title-footer {
+		text-align: center;
 	}
 }
 :root {
@@ -405,7 +426,6 @@ select {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
-	/* outline: 1px solid var(--red); */
 }
 
 .row {
@@ -980,7 +1000,6 @@ header .min-header {
 	position: absolute;
 	top: 0px;
 	bottom: 0;
-	left: 250px;
 	right: 0;
 	z-index: 9;
 	padding-top: 330px;
@@ -1027,7 +1046,7 @@ header .min-header {
 }
 
 .checkedStarss {
-	margin-left: 80px;
+	margin: 0 70px;
 	margin-bottom: 10px;
 }
 /* buttons */
@@ -1130,11 +1149,7 @@ header .min-header {
 }
 
 /* running bar */
-.running-bar {
-	width: 1920px;
-	height: 600px;
-	background-color: var(--blueHover);
-}
+
 .running-bar-image {
 	height: 358px;
 	overflow: hidden;
@@ -1212,7 +1227,6 @@ header .min-header {
 
 footer {
 	background-color: var(--skyBlue);
-	height: 680px;
 }
 .footer-brand {
 	color: var(--dark);
@@ -1240,13 +1254,11 @@ footer {
 .footer-bar {
 	background-color: var(--white);
 	height: 2px;
-	width: 1180px;
-	margin-left: 150px;
+	width: 80%;
+	margin: 0 130px;
 	margin-top: 50px;
 }
-.footer-logo {
-	margin-left: 450px;
-}
+
 /* slick  */
 
 .slick-prev:before,
