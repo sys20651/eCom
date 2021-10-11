@@ -1260,7 +1260,7 @@ footer {
 .slick-prev:before,
 .slick-next:before {
 	font-family: "slick";
-	font-size: 48px;
+	font-size: 44px;
 	line-height: 1;
 	color: var(--red);
 	opacity: 0.75;
