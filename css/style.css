@@ -1260,7 +1260,7 @@ footer {
 .slick-prev:before,
 .slick-next:before {
 	font-family: "slick";
-	font-size: 50px;
+	font-size: 48px;
 	line-height: 1;
 	color: var(--red);
 	opacity: 0.75;
@@ -1268,12 +1268,12 @@ footer {
 }
 
 .slick-prev:before {
-	content: " < ";
+	content: " \01F880 ";
 	margin-right: -100px;
 }
 
 .slick-next:before {
-	content: " > ";
+	content: " \01F882 ";
 	margin-left: -100px;
 }
 .slick-next,
