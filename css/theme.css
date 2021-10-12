@@ -998,11 +998,11 @@ a + p {
 /* Slick Slider */
 .slick-prev::before,
 .slick-next::before {
-	color: var(--gray);
+	color: var(--blue);
 	font-size: 50px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .slick-prev::before {
