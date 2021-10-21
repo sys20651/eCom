@@ -1,0 +1,44 @@
+npm init 
+npm install node
+npm install slick-carousel
+npm install @fontawsome/font-awsome-free
+==================================================
+to go from C to D
+cd /d D:
+===================================================
+
+mozilla -> spider monkey  ==  not open source
+chrome  -> v8             == open source
+====================================================
+Manually Intigration:
+    	1. jQuery       v1.12.1
+    	2. Slick Slider     v1.8.1
+    	3. FontAwesome      v5.15.4
+
+Package Manually:
+   	1. jQuery       v1.12.1
+   	2. Slick Slider     v1.8.1
+    	3. FontAwesome      v5.15.4
+
+====================================================
+
+--script:
+first html code parsing
+then script tag comes html parsing stops
+it goes fetch script tag from network and then execute it
+and then again html parsing begins
+
+
+--async:
+along with html parsing script fetch from network
+then html parsing stops and script tag executes and
+then html parsing begins
+
+
+--defer:
+fetch script alongwith html parsing
+and when html parsing fully completed then execute script tag
+
+
+(t’s better to use DEFER so that their execution happens outside of the main rendering time)
+=================================================================
